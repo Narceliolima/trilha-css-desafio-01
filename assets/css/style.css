@@ -29,13 +29,15 @@ p{
 }
 
 header{
+    width: auto;
+    height: auto;
     background-image: url('../images/banner.png'), linear-gradient(black, #061a23, black);
     background-size: cover;
     background-blend-mode: hard-light;
     border: 1px solid transparent;
 }
 
-img{
+.logo img{
     padding: 20px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, .2);
@@ -70,7 +72,7 @@ section{
     padding: 75px 20px;
 }
 section p{
-    width: 50em;
+    max-width: 50em;
     padding: 5px;
 }
 
@@ -88,7 +90,7 @@ span{
 }
 
 #transform-world{
-    padding: 175px 100px;
+    padding: 175px 50px;
     background-image: url('../images/woman-code.png');
     background-size: cover;
     background-attachment: fixed;
@@ -96,8 +98,8 @@ span{
     text-transform: lowercase;
 }
 #transform-world p{
-    width: 275px;
-    height: 175px;
+    max-width: 275px;
+    max-height: 175px;
     font-size: 40px;
     font-weight: 900;
     margin: 0.5em 2em;
