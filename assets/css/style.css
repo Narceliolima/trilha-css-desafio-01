@@ -28,6 +28,11 @@ p{
     margin: 0.5em auto;
 }
 
+img{
+    max-width: 100%;
+    margin-top: 15px;
+}
+
 header{
     width: auto;
     height: auto;
@@ -37,8 +42,10 @@ header{
     border: 1px solid transparent;
 }
 
-.logo img{
-    padding: 20px;
+.logo{
+    height: 270px;
+    padding: 10px;
+    display: inline-block;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, .2);
 }
@@ -90,7 +97,7 @@ span{
 }
 
 #transform-world{
-    padding: 175px 50px;
+    min-height: 566px;
     background-image: url('../images/woman-code.png');
     background-size: cover;
     background-attachment: fixed;
@@ -98,12 +105,18 @@ span{
     text-transform: lowercase;
 }
 #transform-world p{
-    max-width: 275px;
+    max-width: 285px;
     max-height: 175px;
     font-size: 40px;
     font-weight: 900;
-    margin: 0.5em 2em;
     text-align: left;
+    margin: 13vw 25vh;
+}
+
+@media screen and (max-width: 450px) {
+    #transform-world p {
+        margin: 0;
+    }
 }
 
 footer{
